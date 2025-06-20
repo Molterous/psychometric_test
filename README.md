@@ -37,19 +37,6 @@ Each round randomly presents the train either from the left or the right, and th
 
    flutter run
 
-# 🧩 Project Structure
-
-lib/
-├── widgets/
-│   ├── directional_train_widget.dart
-│   ├── train_from_left_widget.dart
-│   └── train_from_right_widget.dart
-├── psychometric_test_parent.dart
-└── main.dart
-
-assets/
-└── train_img.jpg
-
 # 🛠️ Tech Stack
 
 - Flutter
