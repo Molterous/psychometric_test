@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:psychometric_test/test_screen.dart';
+import './starting_pages/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -9,6 +9,8 @@ void main() async {
     DeviceOrientation.landscapeLeft,
     DeviceOrientation.landscapeRight,
   ]);
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+  // SystemChrome.setEnabledSystemUIOverlays([]);
 
   runApp(const MyApp());
 }
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PsychometricTestApp(),
+      home: SplashScreen(),
     );
   }
 }
